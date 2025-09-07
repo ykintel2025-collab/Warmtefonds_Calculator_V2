@@ -7,14 +7,15 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 20px;
-            /* De herstelde achtergrond met een goud-beige gradiënt */
-            background: linear-gradient(to bottom right, #F7F3E7, #E8E0D1);
+            padding: 0; /* Geen padding op de body */
+            margin: 0; /* Geen margin op de body */
+            background-color: transparent; /* Zorg ervoor dat de body transparant is */
         }
         .calculator-container {
             max-width: 600px;
-            margin: auto;
-            background: white;
+            /* margin: auto; is prima, centreert het in de iframe */
+            margin: 20px auto; /* Ietsje marge boven/onder voor ademruimte */
+            background: white; /* De calculator zelf krijgt de witte achtergrond */
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -24,6 +25,9 @@
             font-weight: bold;
             color: #8D6C3A; 
             margin-bottom: 5px;
+        }
+        p {
+            margin-bottom: 1em; /* Standaard paragraafruimte */
         }
         .form-group {
             margin-bottom: 20px;
